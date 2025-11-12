@@ -24,13 +24,12 @@
             display: block;
         }
 
-        /* ✅ 视频与图片绑定（相对定位） */
         .video-box {
             position: absolute;
-            top: 72.8%;     /* 🟢 改成百分比：视频在图片高度的 42.5% 处 */
+            top: 72.8%;     
             left: 47.8%;
             transform: translate(-50%, -50%);
-            width: 82%;      /* 视频宽度相对于图片宽度 */
+            width: 82%;     
             aspect-ratio: 16 / 9;
             border-radius: 10px;
             overflow: hidden;
@@ -49,7 +48,6 @@
         <div class="video-box">
             <video controls poster="pic2.jpg">
                 <source src="d5241eb0297af159550d8e32c2df59bd.mp4" type="video/mp4">
-                您的浏览器不支持 video 标签。
             </video>
         </div>
     </div>
