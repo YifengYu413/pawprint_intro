@@ -10,18 +10,49 @@
             padding: 0;
         }
         body {
-            background-color: #000; 
-            overflow-x: hidden; 
-            overflow-y: auto; 
+            background-color: #000;
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: relative;
+        }
+        .container {
+            position: relative;
+            width: 100%;
         }
         img {
-            width: 100%;       
-            height: auto;     
-            display: block;   
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+       
+        .video-box {
+            position: absolute;
+            top: 1354px;  
+            left: 47.75%;
+            transform: translateX(-50%);
+            width: 80%;   
+            max-width: 800px;
+            aspect-ratio: 16 / 9;  
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        video {
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
-    <img src="微信图片_20251112144609_589_105.png" alt="长条形图片">
+    <div class="container">
+        <img src="微信图片_20251112144609_589_105.png" alt="长条形图片">
+
+       
+        <div class="video-box">
+            <video controls poster="微信图片_20251112154824_240_5.jpg">
+                <source src="d5241eb0297af159550d8e32c2df59bd.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
 </body>
 </html>
