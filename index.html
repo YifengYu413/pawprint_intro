@@ -13,29 +13,28 @@
             background-color: #000;
             overflow-x: hidden;
             overflow-y: auto;
-            position: relative;
         }
         .container {
             position: relative;
             width: 100%;
         }
-        img {
+        .container img {
             width: 100%;
             height: auto;
             display: block;
         }
-       
+
+        /* ✅ 视频与图片绑定（相对定位） */
         .video-box {
             position: absolute;
-            top: 1354px;  
-            left: 47.75%;
-            transform: translateX(-50%);
-            width: 80%;   
-            max-width: 800px;
-            aspect-ratio: 16 / 9;  
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            top: 72.8%;     /* 🟢 改成百分比：视频在图片高度的 42.5% 处 */
+            left: 47.8%;
+            transform: translate(-50%, -50%);
+            width: 82%;      /* 视频宽度相对于图片宽度 */
+            aspect-ratio: 16 / 9;
             border-radius: 10px;
             overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
         }
         video {
             width: 100%;
@@ -45,12 +44,12 @@
 </head>
 <body>
     <div class="container">
-        <img src="微信图片_20251112144609_589_105.png" alt="长条形图片">
+        <img src="pic1.png" alt="长条形图片">
 
-       
         <div class="video-box">
-            <video controls poster="微信图片_20251112154824_240_5.jpg">
+            <video controls poster="pic2.jpg">
                 <source src="d5241eb0297af159550d8e32c2df59bd.mp4" type="video/mp4">
+                您的浏览器不支持 video 标签。
             </video>
         </div>
     </div>
