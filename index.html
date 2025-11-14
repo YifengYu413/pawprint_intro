@@ -24,7 +24,6 @@
             display: block;
         }
 
-        /* 视频 */
         .video-box {
             position: absolute;
             top: 77%;     
@@ -51,11 +50,40 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
         }
+
+        .jump-btn {
+            position: absolute;
+            top: 10%;              
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 15px;
+            background-color: #ff4fa3; 
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 0 12px rgba(255, 80, 160, 0.6);
+            transition: 0.2s;
+        }
+
+        .jump-btn:hover {
+            transform: translateX(-50%) scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 80, 160, 0.8);
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="pic3.png" alt="长条形图片">
+
+        <a class="jump-btn" 
+           href="https://space.coze.cn/coding-expert-runtime/298572365826?task_id=7572475064236917038"
+           target="_blank">
+           visit our website ➜
+        </a>
 
         <div class="video-box">
             <video controls poster="pic2.jpg">
